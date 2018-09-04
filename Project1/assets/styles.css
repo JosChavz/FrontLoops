@@ -60,6 +60,13 @@ body{
     left: 0;
 }
 
+/*SELECTOR*/
+
+.children:hover{
+    background-color: rgb(246,246,246);
+    border-radius: 6px;
+}
+
 .amount::before{
     content: '$';
     vertical-align: super;
