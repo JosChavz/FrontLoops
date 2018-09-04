@@ -15,27 +15,28 @@ body{
 .container{
     max-width: 70em;
     width: 80%;
-    min-width: 20em;
+    min-width: 100px;
     background: white;
     margin: 5rem auto 0 auto;
     padding: 15px;
     border-radius: 6px;
     box-shadow: 0 0 5px 5px rgb(86,109,152);
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .children{
-    display: inline-block;
-    max-width: 32.3%;
-    width: auto;
-    min-width: 150px;
-    vertical-align: top;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     padding: 10px;
-    position: relative;
     height: 350px;
 }
 
-.children img{
+.content img{
     width: 65px;
 }
 
@@ -51,13 +52,16 @@ body{
     line-height: 23px;
 }
 
-.amount{
+.children .amount{
     font-size: 2rem;
     font-weight: 500;
-    position: absolute;
-    bottom: 10px;
-    right: 0;
-    left: 0;
+}
+
+/*SELECTOR*/
+
+.children:hover{
+    background-color: rgb(246,246,246);
+    border-radius: 6px;
 }
 
 .amount::before{
@@ -70,4 +74,3 @@ body{
     content: ' / month';
     font-size: 16px;
 }
-
