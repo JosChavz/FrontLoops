@@ -1,0 +1,99 @@
+/*BASIC NO CHANGE*/
+*{box-sizing: border-box;}
+
+body{
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: 'Roboto', serif;
+}
+
+.option{
+    border-top: 1px solid rgb(160,160,160);
+    position: relative;
+    color: grey;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.container form legend{
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(48,48,48);
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/*CHANGING ELEMENTS*/
+
+.container{
+    background: #fff;
+    max-width: 40em;
+    margin: 1rem auto 0 auto;
+    border-radius: 6px;
+    padding-top: 20px;
+}
+
+.circles{
+   text-align: center; 
+}
+
+.circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: rgb(220,220,220);
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+label{
+    display: block;
+    padding: 14px 15px;
+}
+
+label img{
+    height: 50px;
+    vertical-align: middle;
+    padding: 0 20px;
+}
+
+.mastercard,
+.visa,
+.maestro{
+    display: inline-block;
+    width: 100%;
+    /*Just because div.checked is invisible*/
+}
+
+.checked img{
+    display: none;
+    vertical-align: middle;
+}
+
+/*input[type="radio"]{
+    display: none;
+}*/
+
+/*SELECTOR*/
+.circle:nth-child(2){
+    background: grey;
+}
+
+.option:hover{
+    color: black;
+    background: rgb(232,232,232);
+}
+
+input[type="radio"]:checked + .checked img{
+    display: inline-block;
+}
+
+input[type="radio"]:checked + .hover{
+    background-color: grey;
+}

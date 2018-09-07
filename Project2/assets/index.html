@@ -9,6 +9,56 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  
+  <div class="container">
+      <div class="circles">
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </div>
+
+    <form>
+      <legend><h2>Payment method</h2></legend>
+      <div class="option">
+        <div class="visa">
+          <label for="visa">
+              <img src="img/visa.svg" alt="visa icon">Visa
+          </label>
+          <input type="radio" name="payment" id="visa">
+        </div>
+        
+        <div class="checked">
+          <img src="img/check.svg" alt="check icon">
+        </div>
+      </div>
+
+      <div class="option">
+        <div class="mastercard">
+          <input type="radio" name="payment" id="mastercard">
+          <label for="mastercard">
+            <img src="img/mastercard.svg" alt="mastercard icon">Mastercard
+          </label>
+        </div>
+        
+        <div class="checked">
+          <img src="img/check.svg" alt="check icon">
+        </div>
+      </div>
+
+      <div class="option">
+        <div class="maestro">
+          <label for="maestro">
+              <img src="img/maestro.svg" alt="maestro icon">Maestro
+          </label>
+          <input type="radio" name="payment" id="maestro">
+        </div>
+        
+        <div class="checked">
+          <img src="img/check.svg" alt="check icon">
+        </div>
+      </div>
+
+      <button type="submit">Next Step <img src="img/arrow.svg" alt="arrow icon"></button>
+    </form>
+  </div>
 </body>
 </html>
