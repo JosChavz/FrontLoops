@@ -10,55 +10,42 @@
 </head>
 <body>
   <div class="container">
-      <div class="circles">
-        <span class="circle"></span>
-        <span class="circle"></span>
-        <span class="circle"></span>
-      </div>
+    <div class="circles">
+      <span class="circle"></span>
+      <span class="circle"></span>
+      <span class="circle"></span>
+    </div>
+    
+    <h2>Payment Method</h2>
 
-    <form>
-      <legend><h2>Payment method</h2></legend>
+    <div class="cards-container">
       <div class="option">
-        <div class="visa">
-          <label for="visa">
-              <img src="img/visa.svg" alt="visa icon">Visa
-          </label>
-          <input type="radio" name="payment" id="visa">
-        </div>
-        
-        <div class="checked">
-          <img src="img/check.svg" alt="check icon">
+        <div class="card">
+          <img src="img/visa.svg" alt="visa icon">
+          <span>Visa</span>
         </div>
       </div>
-
       <div class="option">
-        <div class="mastercard">
-          <input type="radio" name="payment" id="mastercard">
-          <label for="mastercard">
-            <img src="img/mastercard.svg" alt="mastercard icon">Mastercard
-          </label>
+        <div class="card">
+          <img src="img/mastercard.svg" alt="mastercard icon">
+          <span>mastercard</span>
         </div>
-        
-        <div class="checked">
-          <img src="img/check.svg" alt="check icon">
+        <div class="checkbox">
+          <img src="img/check.svg" alt="checkbox">
         </div>
       </div>
-
       <div class="option">
-        <div class="maestro">
-          <label for="maestro">
-              <img src="img/maestro.svg" alt="maestro icon">Maestro
-          </label>
-          <input type="radio" name="payment" id="maestro">
-        </div>
-        
-        <div class="checked">
-          <img src="img/check.svg" alt="check icon">
+        <div class="card">
+          <img src="img/maestro.svg" alt="maestro icon">
+          <span>maestro</span>
         </div>
       </div>
+    </div>
 
-      <button type="submit">Next Step <img src="img/arrow.svg" alt="arrow icon"></button>
-    </form>
+    <div class="submit">
+      <span>Next Step</span>
+      <img src="img/arrow.svg" alt="arrow icon">
+    </div>
   </div>
 </body>
 </html>
