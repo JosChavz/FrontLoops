@@ -1,0 +1,73 @@
+/*NO CHANGE*/
+*{box-sizing: border-box;}
+
+body{background: rgb(22, 160, 133); font-family: 'Roboto', serif;}
+
+/*CHANGE*/
+.container{
+    max-width: 60%;
+    background: #fff;
+    border-radius: 3px;
+    padding: 40px;
+    margin: 50px auto 0 auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 20px 1px rgb(25, 73, 75);
+}
+
+.top{
+    margin-bottom: 20px;
+}
+
+.title{position: relative;}
+.title h2{display: inline-block; margin: 0 0 15px 0;}
+.title img{
+    position: absolute;
+    right: 0;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px;
+}
+
+.top p{color: grey; margin: 0; font-size: 14px;}
+
+
+.receipt{
+    margin: 10px 0;
+}
+
+.item{
+    color: rgb(96, 95, 94);
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.charge{
+    float: right;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#total{
+    margin: 20px 0 0 0;
+}
+#total .item{text-transform: uppercase; font-weight: 500;}
+
+.cycle{
+    height: 10em;
+    position: relative;
+}
+
+.cycle img{
+    position: absolute;
+    max-width: 38em;
+    right: 0;
+    left: 0;
+    top: -70px;
+    margin: 0 auto;
+}
+
+/*SELECTORS*/
+.title img:hover{
+    box-shadow: 0 0 10px;
+    cursor: pointer;
+}
