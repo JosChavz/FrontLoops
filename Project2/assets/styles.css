@@ -8,92 +8,99 @@ body{
     background-position: center;
     height: 100vh;
     font-family: 'Roboto', serif;
+    overflow: hidden;
 }
 
-.option{
-    border-top: 1px solid rgb(160,160,160);
-    position: relative;
-    color: grey;
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 7px;
-}
-
-.container form legend{
-    text-align: center;
-    font-size: 1.2rem;
-    color: rgb(48,48,48);
-    letter-spacing: 7px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-/*CHANGING ELEMENTS*/
-
+/*CHANGES*/
 .container{
-    background: #fff;
-    max-width: 40em;
-    margin: 1rem auto 0 auto;
-    border-radius: 6px;
-    padding-top: 20px;
+    max-width: 30em;
+    background-color: #ffffff;
+    margin: 10% auto;
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .circles{
-   text-align: center; 
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    margin: 10px auto;
+    justify-content: space-between;
+    width: 50px;
 }
 
 .circle{
-    display: inline-block;
+    background: rgb(187, 187, 187);
+    border-radius: 50%;
     width: 10px;
     height: 10px;
-    background: rgb(220,220,220);
-    border-radius: 50%;
-    margin: 0 5px;
 }
 
-label{
-    display: block;
-    padding: 14px 15px;
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px 0 45px 0;
 }
 
-label img{
-    height: 50px;
+.option{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 20px;
+    text-align: left;
+    border-top: 1px solid grey;
+    font-weight: 500;
+    padding: 15px 20px;
+    color: grey;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: center;
+}
+
+.card img{
+    width: 75px;
+    margin-right: 15px;
+}
+
+.submit{
+    background-color: rgb(80, 129, 215);
+    color: #ffffff;
+    padding: 25px;
+    font-weight: 500;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+}
+
+.submit img{
+    width: 15px;
     vertical-align: middle;
-    padding: 0 20px;
 }
 
-.mastercard,
-.visa,
-.maestro{
-    display: inline-block;
-    width: 100%;
-    /*Just because div.checked is invisible*/
-}
-
-.checked img{
-    display: none;
-    vertical-align: middle;
-}
-
-/*input[type="radio"]{
-    display: none;
-}*/
-
-/*SELECTOR*/
+/*SELECTORS*/
 .circle:nth-child(2){
-    background: grey;
+    background-color: grey;
+}
+
+.option:nth-child(2){
+    color: black;
 }
 
 .option:hover{
+    background-color: rgb(230, 230, 230);
     color: black;
-    background: rgb(232,232,232);
+    cursor: pointer;
 }
 
-input[type="radio"]:checked + .checked img{
-    display: inline-block;
+.submit:hover{
+    cursor: pointer;
 }
 
-input[type="radio"]:checked + .hover{
-    background-color: grey;
+.submit:active{
+    top: 1px;
 }
