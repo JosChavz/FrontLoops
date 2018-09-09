@@ -5,14 +5,17 @@ body{background: rgb(22, 160, 133); font-family: 'Roboto', serif;}
 
 /*CHANGE*/
 .container{
-    max-width: 60%;
+    max-width: 50em;
     background: #fff;
     border-radius: 3px;
-    padding: 40px;
     margin: 50px auto 0 auto;
     position: relative;
     overflow: hidden;
     box-shadow: 0 5px 20px 1px rgb(25, 73, 75);
+}
+
+.text-container{
+    padding: 50px;
 }
 
 .top{
@@ -33,7 +36,7 @@ body{background: rgb(22, 160, 133); font-family: 'Roboto', serif;}
 
 
 .receipt{
-    margin: 10px 0;
+    margin: 25px 0;
 }
 
 .item{
@@ -47,23 +50,17 @@ body{background: rgb(22, 160, 133); font-family: 'Roboto', serif;}
     font-weight: 700;
 }
 
-#total{
-    margin: 20px 0 0 0;
-}
 #total .item{text-transform: uppercase; font-weight: 500;}
 
 .cycle{
-    height: 10em;
+    height: 14em;
     position: relative;
+    text-align: center;
 }
 
 .cycle img{
-    position: absolute;
-    max-width: 38em;
-    right: 0;
-    left: 0;
-    top: -70px;
-    margin: 0 auto;
+    max-width: 50em;
+    margin-top: -10em;
 }
 
 /*SELECTORS*/
