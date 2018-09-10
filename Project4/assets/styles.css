@@ -5,8 +5,129 @@ body{
     background-image: linear-gradient(rgb(203, 218, 230), rgb(141, 173, 199));
     height: 100vh;
     font-family: 'Roboto', serif;
-    overflow: hidden;
     margin: 0;
 }
 
+:root{
+    --header-color: rgb(106, 150, 216); /*Used in header bg and button span*/
+    --border-color: rgb(189, 189, 189); /*Used in span time and border-bottom*/
+}
+
+.message-header h3,
+.hr-date,
+.message-texting button{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    /*Note: hr-date will not have same letter-spacing nor font-weight.
+    **Look at button's styling for changes*/
+}
 /*CHANGE*/
+.overflow-issue{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    margin: 10em auto 0 auto;
+    width: 30em;
+    background: #fff;
+}
+
+.message-header{
+    padding: 15px;
+    background: var(--header-color);
+}
+
+.message-header div{display: inline-block; width: 90%;}
+
+.circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    vertical-align: top;
+    margin-top: calc(1.2rem / 3);
+    margin-right: 10px;
+}
+
+.message-header h3{
+    margin: 0;
+    font-size: 1.2rem;
+    display: inline-block;
+    color: #fff;
+}
+
+.message-header img{float: right;}
+
+.message-history{
+    padding: 15px;
+}
+
+.hr-date{
+    text-align: center;
+    height: 10px;
+    border-bottom: 1px solid var(--border-color);
+    margin: 10px 0 30px 0;
+}
+
+.hr-date span{
+    width: 15px;
+    background: #fff;
+    padding: 0 5px;
+    letter-spacing: normal;
+    font-weight: 500;
+    color: var(--border-color);
+}
+
+.messages{
+    margin: 10px 0;
+}
+
+.time{margin: 0 0 5px 0; color: grey;}
+.bubble{
+    display: inline-block;
+    max-width: 20em;
+    border-radius: 5px;
+    background: rgb(230, 237, 246);
+    padding: 10px;
+    margin: 0;
+}
+
+.sender{text-align: right;}
+.sender .bubble{
+    text-align: left;
+    background-color: rgb(241, 241, 241);
+}
+
+.blocked{background: rgb(255, 194, 193)!important;}
+
+.message-texting{
+    border-top: 1px solid var(--border-color);
+    padding: 15px 0;
+    margin: 0 15px;
+}
+
+.text-size{
+    display: inline-block;
+    width: 85%;
+}
+
+.text-size textarea{
+    width: 100%;
+    resize: none;
+    border-collapse: collapse;
+    border: none;
+    font-size: 16px;
+    font-family: 'Roboto', serif;
+    height: 18px;
+}
+
+.message-texting button{
+    float: right;
+    height: inherit;
+    border: none;
+    color: var(--header-color);
+    background: transparent;
+}
