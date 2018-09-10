@@ -1,0 +1,12 @@
+/*NO CHANGE*/
+*{box-sizing: border-box;}
+
+body{
+    background-image: linear-gradient(rgb(203, 218, 230), rgb(141, 173, 199));
+    height: 100vh;
+    font-family: 'Roboto', serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+/*CHANGE*/
