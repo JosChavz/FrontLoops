@@ -1,0 +1,131 @@
+/*NO CHANGE*/
+*{box-sizing: border-box;}
+
+body{
+    background-image: linear-gradient(rgb(203, 218, 230), rgb(141, 173, 199));
+    height: 100vh;
+    font-family: 'Roboto', serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+/*CHANGE*/
+.container{
+    width: 30em;
+    margin: 10% auto 0 auto;
+    background: #fff;
+}
+
+.message-header{
+    background-color:rgb(106, 150, 216);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.message-header div{
+    display: flex;
+    align-items: center;
+}
+
+.message-header div h3{
+    margin: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.circle{
+    background-color: #ffffff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.message-header img{cursor: pointer; transition: ease-in-out .3s;}
+
+.message-history{
+    margin: 0 25px;
+}
+
+.hr-date{
+    height: 10px;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hr-date span{
+    font-size: 15px;
+    background-color: #ffffff;
+    padding: 0 10px;
+    text-transform: uppercase;
+    color: rgb(189, 189, 189);
+}
+
+.time{
+    font-size: 15px;
+    color: grey;
+    margin: 0 0 6px 0;
+}
+
+.bubble{
+    display: inline-block;
+    background: rgb(230, 237, 246);
+    margin: 0;
+    padding: 10px;
+    max-width: 20em;
+    border-radius: 5px;
+}
+.sender{text-align: right;}
+.sender .bubble{background-color: rgb(241, 241, 241); text-align: left;}
+
+.sender,
+.receiver{
+    margin: 5px 0;
+}
+
+.blocked{
+    background-color: rgb(255, 194, 193)!important;
+}
+
+.message-texting{
+    margin: 15px 25px;
+    border-top: 1px solid rgb(189, 189, 189);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.message-texting textarea{
+    flex: 1;
+    border: none;
+    resize: none;
+    font-family: 'Roboto', serif;
+}
+
+.message-texting button{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(106, 150, 216);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    height: 30px;
+}
+
+.text-size{
+    height: 20px;
+    overflow: hidden;
+}
+
+/*SELECTOR*/
+.message-header img:hover{
+    filter: brightness(2);
+}
