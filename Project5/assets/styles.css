@@ -18,25 +18,24 @@ body{
     justify-content: center;
 }
 /*CHANGES*/
-
-/* FLEX CSS, USING FOR REFERENCE ****
 .container{
     width: 35em;
     margin: 2em auto 0 auto;
-    display: flex;
     padding: 40px;
     background: #fff;
-    flex-direction: column;
-    flex-wrap: wrap;
     border-radius: 4px;
 }
 
-.flight-to{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    margin: 30px 0 5em 0;
+.flight-to{position:relative; margin: 30px 0 5em 0;}
+.from-to, .mark{display:inline-block;}
+
+.mark{vertical-align: top; height: 75px; width: 43%;}
+.mark span{
+    display: block;
+    width: 40px;
+    height: 10px;
+    background-color: rgb(211, 230, 244);
+    margin: calc(75px / 2) auto 0 auto;
 }
 
 .from-to h2{
@@ -48,32 +47,22 @@ body{
     line-height: 3.5rem;
 }
 
-.from-to span{margin: 0;}
+.flight-to .from-to:nth-child(3){float: right;}
 
-.mark{
-    width: 40px;
-    height: 10px;
-    background-color: rgb(211, 230, 244);
-}
-
-.flight-details{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 20px 0;    
-}
-
+.flight-details{width: 80%; margin: 20px 0;}
 .flight-details h4{margin: 0;}
+
+.detail{display: inline-block; width: 26.66%;}
 
 .detail h4{font-size: 14px; font-weight: 400;}
 .detail span{font-size: 18px; color: #000; font-weight: 500;}
 
-.specifications{display: flex; justify-content: space-between;}
+.specifications{position: relative;} /*For QR element*/
 
-.passenger-details{display: flex; flex-direction: column; justify-content: space-between;}
+.passenger-details .detail{display: block;}
+.passenger-details .detail:nth-child(2){padding: calc(150px / 8) 0;} /*"equal" amount of spacing*/
 .passenger-details h4{margin: 0;}
 .passenger-details span{text-transform: none;}
 
-.qr-code img{
-    width: 150px;
-}*/
+.qr-code{position: absolute; right: 0; top: 0;}
+.qr-code img{height: 150px;}
