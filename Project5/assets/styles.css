@@ -1,0 +1,79 @@
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Roboto', serif;
+    font-size: 16px; /*default because most of the text is only larger few pixels (reference)*/
+    text-transform: uppercase; /*Has the upper hand*/
+    color: rgb(200, 196, 184); /*Mostly used*/
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+/*CHANGES*/
+
+/* FLEX CSS, USING FOR REFERENCE ****
+.container{
+    width: 35em;
+    margin: 2em auto 0 auto;
+    display: flex;
+    padding: 40px;
+    background: #fff;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 4px;
+}
+
+.flight-to{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0 5em 0;
+}
+
+.from-to h2{
+    font-family: 'Prompt', serif;
+    font-weight: 900;
+    margin: 0;
+    font-size: 4rem;
+    color: rgb(59, 138, 207);
+    line-height: 3.5rem;
+}
+
+.from-to span{margin: 0;}
+
+.mark{
+    width: 40px;
+    height: 10px;
+    background-color: rgb(211, 230, 244);
+}
+
+.flight-details{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px 0;    
+}
+
+.flight-details h4{margin: 0;}
+
+.detail h4{font-size: 14px; font-weight: 400;}
+.detail span{font-size: 18px; color: #000; font-weight: 500;}
+
+.specifications{display: flex; justify-content: space-between;}
+
+.passenger-details{display: flex; flex-direction: column; justify-content: space-between;}
+.passenger-details h4{margin: 0;}
+.passenger-details span{text-transform: none;}
+
+.qr-code img{
+    width: 150px;
+}*/
