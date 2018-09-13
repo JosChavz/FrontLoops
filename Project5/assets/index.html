@@ -10,6 +10,70 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  
+    <!-- Wrapper to keep body size where it ought to stay in -->
+  <div class="wrapper">
+    <!-- This is the container for the flight ticket -->
+    <div class="container">
+        <!-- Top part of the container -->
+        <!-- Equal amount of margin top and bottom; no side margins-->
+        <div class="flight-to">
+            <div class="from-to">
+                <h2>FRA</h2><!-- larger text -->
+                <span>France</span>
+            </div>
+            
+            <div class="mark"><span></span></div> <!-- Just a box -->
+                
+            <div class="from-to">
+                <h2>AMS</h2><!-- larger text -->
+                <span>Amsterdam</span>
+            </div>
+        </div>
+        
+        <!-- equal amount of margin to and bottom -->
+        <div class="flight-details">
+          <div class="detail">
+             <h4>Flight</h4>
+             <span>815</span>
+          </div>
+                
+          <div class="detail">
+            <h4>Gate</h4>
+            <span>23G</span>
+          </div>
+                
+          <div class="detail">
+            <h4>Seat</h4>
+            <span>10F</span>
+          </div>
+        </div>
+        
+        <!-- Bottom part of the container that includes information about the flight's ticket-->
+        <div class="specifications">
+            <!-- given the same height as the QR code, efficient for flexbox-->
+            <div class="passenger-details">
+                <div class="detail">
+                    <h4>Passenger</h4>
+                    <span>Robert De Niro</span>
+                </div>
+                
+                <div class="detail">
+                    <h4>Class</h4>
+                    <span>Business</span>
+                </div>
+                
+                <div class="detail">
+                    <h4>Departure</h4>
+                    <span>3:45am, Dec 15</span>
+                </div>
+            </div>
+            
+            <!-- This is where the QR code belongs, obv-->
+            <div class="qr-code">
+                <img src="img/qr.svg" alt="qr code">
+            </div>
+        </div>
+    </div>
+  </div>
 </body>
 </html>
