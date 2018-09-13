@@ -44,7 +44,11 @@ body{
     margin-right: 20px;
 }
 
-.message-header img{cursor: pointer; transition: ease-in-out .3s;}
+.message-header img{
+    cursor: pointer; 
+    opacity: 0.5;
+    transition: opacity ease-in-out .3s;
+}
 
 .message-history{
     margin: 0 25px;
@@ -94,10 +98,10 @@ body{
 .message-texting{
     margin: 15px 25px;
     border-top: 1px solid rgb(189, 189, 189);
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: content-box;
     padding: 15px 0;
 }
 
@@ -106,6 +110,10 @@ body{
     border: none;
     resize: none;
     font-family: 'Roboto', serif;
+    padding: 10px 15px;
+    height: 40px; 
+    /*For Firefox; Chrome allows a max of ~36px without having the scrollbar*/
+    box-sizing: border-box;
 }
 
 .message-texting button{
@@ -117,15 +125,10 @@ body{
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 2px;
-    height: 30px;
-}
-
-.text-size{
-    height: 20px;
-    overflow: hidden;
 }
 
 /*SELECTOR*/
-.message-header img:hover{
-    filter: brightness(2);
-}
+.message-header img:hover{opacity: 1;}
+
+button:focus,
+textarea:focus{outline: none;}/*For Chrome Purposes*/
