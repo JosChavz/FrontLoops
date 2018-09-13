@@ -59,7 +59,12 @@ body{
     color: #fff;
 }
 
-.message-header img{float: right;}
+.message-header img{
+    float: right; 
+    cursor: pointer; 
+    opacity: 0.5;
+    transition: opacity ease-in-out 0.2s;
+}
 
 .message-history{
     padding: 15px;
@@ -107,27 +112,35 @@ body{
     border-top: 1px solid var(--border-color);
     padding: 15px 0;
     margin: 0 15px;
+    box-sizing: content-box;
+    line-height: 0;
 }
 
-.text-size{
+.message-texting textarea{
+    box-sizing: border-box;
     display: inline-block;
-    width: 85%;
-}
-
-.text-size textarea{
-    width: 100%;
+    width: 79%;
     resize: none;
-    border-collapse: collapse;
     border: none;
     font-size: 16px;
     font-family: 'Roboto', serif;
-    height: 18px;
+    padding: 12px 10px;
+    height: 45px;
 }
 
 .message-texting button{
-    float: right;
-    height: inherit;
+    vertical-align: top;
+    cursor: pointer;
+    width: 20%;
+    display: inline-block;
+    padding: 10px;
     border: none;
     color: var(--header-color);
     background: transparent;
 }
+
+/*SELECTORS*/
+.message-texting textarea:focus,
+button:focus{outline: none;} /*For Chrome Purposes*/
+
+.message-header img:hover{opacity: 1;}
