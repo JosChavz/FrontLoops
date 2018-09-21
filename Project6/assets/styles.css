@@ -1,0 +1,104 @@
+/*NO CHANGES*/
+*{box-sizing: border-box;}
+body{font-family: 'Roboto', serif; background-color: rgb(77, 81, 93);}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+/*CHANGES*/
+#sign-up{
+    display: flex;
+    margin: 5% 0 0;
+    width: 60%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 3px 20px 0 #000;
+}
+
+.sign-up-container{
+    width: 60%;
+}
+
+.sign-up-header{margin: 40px 0; padding: 35px 35px 0;}
+.sign-up-header h3{font-weight: 300; font-size: 2.6rem; margin: 15px 0;}
+.sign-up-header p{color: grey; font-size: 0.9rem;}
+
+#platform-sign-up{margin: 5em 0; padding: 0 35px;}
+
+#platform-sign-up .links-block{
+    padding: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+}
+
+.links-block{
+    display: flex;
+    color: grey;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.3s;
+}
+
+.links-block p{
+    margin: 0;
+    display: inline-block;
+    flex: 1;
+    align-self: center;
+}
+
+.links-block img{height: 25px;}
+
+#email-sign-up{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+    padding: 3.5em;
+}
+
+#email-sign-up p{color: black;}
+#email-sign-up a{color: grey; text-decoration: none;}
+
+.img{
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+
+/*SELECTORS*/
+.img:after{
+    content: '';
+    position: absolute;
+    background-image: url("img/side.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+#platform-sign-up .links-block:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 5px 0 rgb(214, 214, 214);
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 0;
+    color: black;
+}
+
+.links-block:hover,
+#email-sign-up a:hover{color:black;}
+
+#platform-sign-up .links-block:hover:after{
+    opacity: 1;
+}
