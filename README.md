@@ -1,6 +1,9 @@
+# Personal FrontLoops Challenges - Markup
+
+***NOTE:** These challenges are made for laptop or larger screens. If viewing on mobile, it will not be as pretty as expected.* 
+
 This project is to exercise on my HTML and CSS skills. 
 Please do not expect me to create a perfect one answer for these projects.
-I am experimenting with the difference of CSS Grid, Inline-Block, and Flexbox, but not limited. I could do one project with just CSS Grid or not, it all depends. 
 This is for learning purposes!
 
 If you would like to request a pull, please explain! 
